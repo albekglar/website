@@ -1,0 +1,58 @@
+.navbar__container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 70px;
+
+    background-color: #333;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.navbar__container:hover {
+    width: 250px;
+    padding: 20px;
+}
+
+/* Контент навигации */
+.navbar__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    opacity: 0;
+
+    transition: opacity 0.2s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+/* Показываем контент при наведении */
+.navbar__container:hover .navbar__content {
+    opacity: 1;
+}
+
+
+.navbar-logo {
+    
+    padding: 20px 5px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
