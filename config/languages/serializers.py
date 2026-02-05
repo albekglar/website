@@ -16,5 +16,5 @@ class FrameworkSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Framework
-        fields = ['id','title','description','date']
+        fields = ['id','title','description','languages','date']
     

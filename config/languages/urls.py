@@ -8,6 +8,6 @@ router.register('Languages',LanguagesViewSet)
 router.register('Framework',FrameworkViewSet)
 
 urlpatterns = [
-    path('',include(router.urls)),
+    path('',include(router.urls))
 
 ]
